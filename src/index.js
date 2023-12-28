@@ -5,10 +5,14 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
+const componentsToShow = [
+  "View00",
+  "View01",
+];
+
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+    <App componentsToShow={(componentsToShow)}/>
 );
 
 // If you want to start measuring performance in your app, pass a function
